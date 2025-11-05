@@ -1,97 +1,73 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人網站</title>
+    <title>Ashley's Personal Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
         }
-
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #00bcd4;
+            width: 100%;
             padding: 20px 0;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
         }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .profile-photo {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+        .intro {
             margin-top: 20px;
-        }
-
-        h1 {
-            margin-top: 20px;
-            font-size: 36px;
+            font-size: 24px;
             color: #333;
         }
-
-        p {
-            font-size: 18px;
-            color: #666;
-        }
-
-        .video-container {
+        .photo {
             margin-top: 30px;
-            margin-bottom: 30px;
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
         }
-
-        iframe {
-            width: 100%;
-            max-width: 800px;
-            height: 450px;
-            border: none;
+        .pdf-links {
+            margin-top: 40px;
         }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
+        .pdf-links a {
+            color: #00bcd4;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+        }
+        .pdf-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>歡迎來到我的網站！</h1>
-</header>
+    <header>
+        ASHLEY
+    </header>
 
-<div class="container">
-    <img src="myphoto.jpg" alt="我的照片" class="profile-photo">
-    <h2>我是 [你的名字]</h2>
-    <p>簡短的自我介紹，介紹你自己和你的興趣或專業背景。</p>
-
-    <!-- YouTube 影片區塊 -->
-    <div class="video-container">
-        <h3>我的自我介紹影片</h3>
-        <iframe src="https://www.youtube.com/embed/[Your-Video-ID]" 
-                title="自我介紹影片" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
+    <div class="intro">
+        Vlogging About Beauty, Fashion, Life Hacks & My Life!
     </div>
-</div>
 
-<footer>
-    <p>© 2025 [你的名字] | 所有權利保留</p>
-</footer>
+    <img src="myphoto.jpg" alt="My Photo" class="photo">
+
+    <div class="pdf-links">
+        <h3>我的作品集:</h3>
+        <a href="works/作品1.pdf" target="_blank">作品 1</a>
+        <a href="works/作品2.pdf" target="_blank">作品 2</a>
+        <a href="works/作品3.pdf" target="_blank">作品 3</a>
+    </div>
 
 </body>
 </html>
